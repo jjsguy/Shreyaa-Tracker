@@ -43,7 +43,7 @@ function getPerfectDays(logs) {
   return Object.values(logs).filter((day) => HABITS.every((h) => day[h.id])).length;
 }
 function getCompletionRate(logs, today) {
-  const START = new Date("2025-06-01");
+  const START = new Date("2026-06-01");
   const diff = Math.floor((today - START) / (1000 * 60 * 60 * 24));
   const daysSince = Math.max(1, diff);
   const total = Object.values(logs).reduce((a, d) => a + HABITS.filter((h) => d[h.id]).length, 0);
@@ -253,7 +253,7 @@ export default function Home() {
   const perfectDays = getPerfectDays(logs);
   const completionRate = getCompletionRate(logs, today);
   const quote = QUOTES[today.getDate() % QUOTES.length];
-  const START_DATE = new Date("2025-06-01");
+  const START_DATE = new Date("2026-06-01");
   const daysUntilStart = Math.max(0, Math.ceil((START_DATE - today) / (1000 * 60 * 60 * 24)));
   const isStarted = today >= START_DATE;
 
@@ -634,7 +634,7 @@ export default function Home() {
         padding: "12px", background: "rgba(13,13,13,0.92)", backdropFilter: "blur(12px)",
         fontSize: 11, color: "#5A4F6A", letterSpacing: 1, zIndex: 10,
       }}>
-        Made with 💜 · Shreyaa's Fitness Journey starts June 1, 2025
+        Made with 💜 · Shreyaa's Fitness Journey starts June 1, 2026
       </div>
     </div>
   );
