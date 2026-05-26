@@ -9,6 +9,7 @@ const HABITS = [
   { id: "wake",     label: "Wake up at 5 AM",       icon: "🌅", color: "#FF6B35" },
   { id: "run",      label: "Morning Run",            icon: "🏃‍♀️", color: "#FF4757" },
   { id: "water",    label: "Drink 3L Water",         icon: "💧", color: "#1E90FF" },
+  { id: "hanuman", label: "Hanuman Chalisa 7x",      icon: "🙏", color: "#FF9F43" },
   { id: "calories", label: "Calorie Deficit Diet",   icon: "🥗", color: "#2ED573" },
   { id: "fasting",  label: "Intermittent Fasting",   icon: "⏱️", color: "#ECCC68" },
   { id: "exercise", label: "Exercise 20–30 mins",    icon: "💪", color: "#A29BFE" },
